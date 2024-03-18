@@ -4,26 +4,20 @@
 <H3>Aim:</H3>
 <p>To Implement A * Search algorithm for a Graph using Python 3.</p>
 <H3>Algorithm:</H3>
-
 ``````
 // A* Search Algorithm
 1.  Initialize the open list
 2.  Initialize the closed list
     put the starting node on the open 
     list (you can leave its f at zero)
-
 3.  while the open list is not empty
     a) find the node with the least f on 
        the open list, call it "q"
-
     b) pop q off the open list
-  
     c) generate q's 8 successors and set their 
        parents to q
-   
     d) for each successor
         i) if successor is the goal, stop search
-        
         ii) else, compute both g and h for successor
           successor.g = q.g + distance between 
                               successor and q
@@ -32,22 +26,17 @@
           ways, we will discuss three heuristics- 
           Manhattan, Diagonal and Euclidean 
           Heuristics)
-          
           successor.f = successor.g + successor.h
-
         iii) if a node with the same position as 
             successor is in the OPEN list which has a 
            lower f than successor, skip this successor
-
         iV) if a node with the same position as 
             successor  is in the CLOSED list which has
             a lower f than successor, skip this successor
             otherwise, add  the node to the open list
      end (for loop)
-  
     e) push q on the closed list
     end (while loop)
-
 ``````
 ## PROGRAM:
 ```
@@ -155,13 +144,10 @@ Graph_nodes=graph
 print(graph)
 aStarAlgo('S', 'G')
 ```
-
 <hr>
 <h2>Sample Graph I</h2>
 <hr>
-
 ![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/b1377c3f-011a-4c0f-a843-516842ae056a)
-
 <hr>
 <h2>Sample Input</h2>
 <hr>
@@ -194,15 +180,10 @@ J 0 <br>
 <h2>Sample Output</h2>
 <hr>
 Path found: ['A', 'F', 'G', 'I', 'J']
-
-
 <hr>
 <h2>Sample Graph II</h2>
 <hr>
-
 ![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/acbb09cb-ed39-48e5-a59b-2f8d61b978a3)
-
-
 <hr>
 <h2>Sample Input</h2>
 <hr>
@@ -223,6 +204,5 @@ G 0 <br>
 <h2>Sample Output</h2>
 <hr>
 Path found: ['A', 'E', 'D', 'G']
-
 ## RESULT:
 Therefore Implementing A * Search algorithm for a Graph using Python 3 is executed successfully.
